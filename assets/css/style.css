@@ -219,11 +219,12 @@
 :root {
   --primary-color: #e5612f; /* Example Primary Color */
   --secondary-color: #6c757d; /* Example Secondary Color */
-  --background-color: #eef0f1; /* Example Background Color */
-  --text-color: #212529; /* Example Text Color */
+  --background-color: #171617; /* Example Background Color */
+  --text-color: #eef0f1; /* Example Text Color */
   --heading-color: #343a40; /* Example Heading Color */
   --border-color: #dee2e6; /* Example Border Color */
   --text-color-white: #ffff;
+  --text-color-black:  #212529;
 }
 
 /* Applying Fonts and Colors to Elements */
@@ -234,7 +235,7 @@ html {
 body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  background-color: var(--text-color-white);
+  background-color: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
 }
@@ -392,7 +393,7 @@ header {
   width: 100%;
   padding: 0;
   margin: 0;
-  /* background-color: var(--primary-color); */
+   background-color: var(--background-color); 
   box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 7px 5px 15px -4px rgba(0, 0, 0, 0.75);
@@ -748,12 +749,13 @@ header.scrolled {
 
 /* Banner Start */
 .banner {
-  background-image: url("./../images/banner.jpg");
+  background-color: #36454F; /
   /* opacity: 0.8; */
   width: 100%;
-  height: auto;
+  aspect-ratio: 1920 / 740;
   background-repeat: no-repeat;
   background-size: cover;
+
   /* overflow: hidden; */
 }
 
