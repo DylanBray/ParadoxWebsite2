@@ -20,6 +20,9 @@
     />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
       header.scrolled .menus > ul > li::after {
         background-color: var(--text-color-black);
@@ -30,25 +33,30 @@
   <body>
 
     <header>
-      <div class="container header my-3 d-none d-lg-flex">
+      <div class="container header  d-none d-lg-flex justify-content-center">
        
         <div class="menus">
           <ul class="d-flex mb-0">
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./index.html"
-                >Home</a
+              <a class="text-decoration-none text-uppercase p-4" href="#"
+                >MENU</a
               >
             </li>
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./about.html"
+              <a class="text-decoration-none text-uppercase p-4" href="#about"
                 >About</a
               >
             </li>
             
             
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="./contact.html"
+              <a class="text-decoration-none text-uppercase p-4" href="#contact"
                 >Contact</a
+              >
+            </li>
+            <li class="list-unstyled py-2">
+              <a class="text-decoration-none text-uppercase p-4" href="#"
+                 >Order Now</a
               >
             </li>
           </ul>
@@ -65,13 +73,26 @@
       
      
 
+      <section class="py-5 my-5" id="about">
+        <div class="container">
+          <div class="row gy-5 g-lg-5 justify-content-center">
+             
+              <div class="col-lg-4" data-aos="fade">
+                 
+                <img src="assets/images/Paradox_Logo_Double_Rev.png" alt="Paradox Pizzeria logo" class="img-fluid">
+                 <h2 class="mb-3 px-2 justify-content-center">PIZZERIA & BREWERY</h2>
+              </div>
+          </div>
+        </div>
+      </section>
+      
       <section class="py-5 my-5">
         <div class="container">
-          <div class="row gy-5 g-lg-5 align-items-center">
+          <div class="row gy-5 g-lg-5 justify-content-center">
              
-              <div class="col-lg-6" data-aos="fade-left">
-                  <h5>About</h5>
-                  <h2 class="mb-4 dis">Paradox Pizzeria & Brewery</h2>
+              <div class="col-lg-5" data-aos="fade">
+                 
+                 
                   <p class="mb-4">Detroit-style pizza. Small-batch beer.</p>
                   <p class="mb-4">
                     Paradox offers delicious hand-made pizza and appetizers paired with craft beer brewed on site — plus a rotating lineup of Saskatchewan-made brews and spirits. Every bite, every pour, rooted in local flavor.
@@ -83,95 +104,60 @@
         </div>
       </section>
 
-      <section>
-        <div class="col-xl-4">
-          <div  data-aos="fade-down-left">
-            <div >
-              <h2>Hours</h2>
-              <div >
-                <p>Tuesday: .......................... 11AM - 9PM</p>
-                <p>Wednesday: ..................... 11AM - 9PM</p>
-                <p>Thursday: ......................... 11AM - 9PM</p>
-                <p>Friday: ............................... 11AM - 9PM</p>
-                <p>Saturday: ........................... 11AM - 10PM</p>
-                <p>Sunday: ............................. Closed</p>
-                <p>Monday: ............................. Closed</p>
-              </div>
-              <h2 class="pb-2">Phone Number</h2>
-              <h3>(617)-276-8031</h3>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-    
-
-      <section class="subscribe-us pb-5 mb-5">
-        <img class="d-none d-lg-block" src="./assets/images/subscribe-us.png" alt="" data-aos="fade-down-right">
+      <section id="contact">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-2">
-            </div>
-            <div class="col-lg-8 d-flex flex-column flex-md-row align-items-lg-center">
-              <div class="content" data-aos="fade-right">
-                <h5 class="display-6 text-black">Subcribe To Our Newsletter</h5>
-             
+          <div class="row gy-5 g-lg-5 justify-content-center" data-aos="fade-down">
+            <div class="col-lg-3" >
+              <p  class="my-0">806 Broadway Ave</p>
+              <p>Saskatoon SK, S7H 3P6 </p>
+              <h3>HOURS</h3>
+              <div class="mb-2">
+                <p class="my-0" >Tuesday: .......................... 11AM - 9PM</p>
+                <p class="my-0" >Wednesday: ..................... 11AM - 9PM</p>
+                <p class="my-0">Thursday: ......................... 11AM - 9PM</p>
+                <p class="my-0">Friday: ............................... 11AM - 9PM</p>
+                <p class="my-0">Saturday: ........................... 11AM - 10PM</p>
+                <p class="my-0">Sunday: ............................. Closed</p>
+                <p class="my-0">Monday: ............................. Closed</p>
               </div>
-              <div class="subscribe-form d-flex ps-0 ms-0 ps-lg-5 ms-lg-5" data-aos="fade-left">
-                <div class="input-form w-100">
-                  <input class="border-0 px-3 w-100" type="email" placeholder="Email">
-                </div>
-                <div class="input-button">
-                  <a class="text-decoration-none" href="#">
-                    <i class="fa fa-paper-plane"></i>
-                  </a>
-                </div>
-              </div>
+              <h3 class="my-0">Phone</h3>
+              <p>(617)-276-8031</p>
             </div>
           </div>
         </div>
+
       </section>
-    </main>
+
     
 
-    <a href="#" id="back-to-top">
-      <i class="fa-solid fa-angles-up"></i>
-    </a>
+    
+    </main>
+
 
     
     <footer>
       <div class="container">
-        <div class="row">
-          <div class="footer-content col-xl-8  px-4">
-            <div class="row">
-              <div class="col-lg-6 px-0">
-                <div class="logo" data-aos="fade-down-right">
-                  <a href="./index.html">
-                    <i class="fa fa-utensils me-3"></i>
-                    <h1 class="mb-0">Restoran</h1>
-                  </a>
-                </div>
-              </div>
-              <div data-aos="fade-down" class="col-lg-6 pt-4 pt-lg-0 d-flex align-items-center justify-content-start justify-content-lg-end">
-                <div class="social-icons d-flex">
-                  <ul class="d-flex mb-0 ps-0">
-                    <li class="mx-2"><a class="text-decoration-none text-white" href="#"><i class="fab fa-facebook"></i></a></li>
-                  </ul>
+        <div class="row justify-content-center">
+          <div class="footer-content col-lg-6  px-4">
+            <div class="row justify-content-center">
+           
+              <div data-aos="fade-down" class="col-lg-1 pt-4 pt-lg-0  align-items-center ">
+                <div class="social-icons d-flex align-items-center">
+                  
+                    <a class="text-decoration-none text-white" href="#"><i class="fab fa-facebook"></i></a>
+                    <a class="text-decoration-none text-white" href="#"><i class="fab fa-instagram"></i></a>
+                  
                 </div>
               </div>
             </div>
-            <div class="row pt-5 content-desc" data-aos="fade-right">
-              <p class="px-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor.</p>
-            </div>
+         
             <div class="row" data-aos="fade-right">
               <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
                 <div class="location d-flex align-items-center pe-2 py-3">
                   <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
                   <div class="ps-3">
                     <p class="mb-0">
-                      157 White Oak Drive Kansas City <br>
-                      689 Lynn Street South Boston
+                      806 Broadway Ave Saskatoon SK
                     </p>
                   </div>
                 </div>
@@ -179,7 +165,6 @@
                   <i class="fa-solid fa-mobile text-white fa-2x border-bottom pb-2"></i>
                   <div class="ps-3">
                     <p class="mb-0">
-                      (617)-276-8031 <br>
                       (617)-276-8031
                     </p>
                   </div>
@@ -198,7 +183,7 @@
           </div>
           
         <div class="row">
-          <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Restoran.</b> All rights reserved. Design by <a href="https://www.linkedin.com/in/codewithshabbir/" class="fw-bold author-name">Muhammad Shabbir</a></p>
+          <p class="text-center pt-4 mt-3 pt-lg-0">&copy; <span id="copyrightCurrentYear"></span> <b> Paradox PIzzeria & Brewing Corp.</b> All rights reserved.</p>
         </div>
       </div>
     </footer>
@@ -211,5 +196,48 @@
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script type="module">
+
+      // Import the functions you need from the SDKs you need
+
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+      // Your web app's Firebase configuration
+
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+      const firebaseConfig = {
+
+      apiKey: "AIzaSyD35zF6KwWbN-fmFhcpY9yibaBRaO0rGpA",
+
+      authDomain: "paradox-website-2b9d8.firebaseapp.com",
+
+      projectId: "paradox-website-2b9d8",
+
+      storageBucket: "paradox-website-2b9d8.firebasestorage.app",
+
+      messagingSenderId: "365779761550",
+
+      appId: "1:365779761550:web:d15f1d8a9bf2ec55e10cdf",
+
+      measurementId: "G-BDT8K92PC3"
+
+  };
+
+
+      // Initialize Firebase
+
+      const app = initializeApp(firebaseConfig);
+
+      const analytics = getAnalytics(app);
+
+    </script>
   </body>
 </html>

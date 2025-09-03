@@ -217,7 +217,7 @@
 
 /* Color Variables */
 :root {
-  --primary-color: #e5612f; /* Example Primary Color */
+  --primary-color: #78a3bf; /* Example Primary Color */
   --secondary-color: #6c757d; /* Example Secondary Color */
   --background-color: #171617; /* Example Background Color */
   --text-color: #eef0f1; /* Example Text Color */
@@ -233,17 +233,20 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Azeret Mono", monospace;
   font-weight: 400;
   background-color: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
 }
 
+h1,h3 {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 
-
-h1,
-h3,
 h4,
 h6 {
   font-family: "Nunito", sans-serif;
@@ -252,9 +255,11 @@ h6 {
 }
 
 h2 {
-  font-family: "Nunito", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 800;
+  
+  font-family: "Azeret Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 h5 {
@@ -269,6 +274,8 @@ a,
 span {
   font-family: "Heebo", sans-serif;
   font-weight: 400;
+  font-style: normal;
+
 }
 
 button,
@@ -389,6 +396,7 @@ body::-webkit-scrollbar-thumb {
 /* Header Start */
 
 header {
+    top:0;
   position: fixed;
   width: 100%;
   padding: 0;
@@ -429,6 +437,7 @@ header.scrolled {
 }
 
 .menus > ul {
+    padding: 0px;
 }
 
 .menus > ul > li {
@@ -453,7 +462,10 @@ header.scrolled {
 }
 
 .menus > ul > li > a {
-  font-family: "Heebo", sans-serif;
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   color: var(--text-color-white);
 }
 
