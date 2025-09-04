@@ -23,6 +23,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <style>
       header.scrolled .menus > ul > li::after {
         background-color: var(--text-color-black);
@@ -38,22 +39,11 @@
         <div class="menus">
           <ul class="d-flex mb-0">
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="#"
+              <a class="text-decoration-none text-uppercase p-4" href="assets/images/menu.pdf"
                 >MENU</a
               >
             </li>
-            <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="#about"
-                >About</a
-              >
-            </li>
             
-            
-            <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="#contact"
-                >Contact</a
-              >
-            </li>
             <li class="list-unstyled py-2">
               <a class="text-decoration-none text-uppercase p-4" href="#"
                  >Order Now</a
@@ -79,8 +69,9 @@
              
               <div class="col-lg-4" data-aos="fade">
                  
-                <img src="assets/images/Paradox_Logo_Double_Rev.png" alt="Paradox Pizzeria logo" class="img-fluid">
-                 <h2 class="mb-3 px-2 justify-content-center">PIZZERIA & BREWERY</h2>
+                <img src="assets/images/ambigram_white.png" alt="Paradox Pizzeria logo" class="img-fluid">
+                <img src="assets/images/paradox_title.png" alt="Paradox Pizzeria logo" class="img-fluid">
+                <h2 class="mb-3 px-2 justify-content-center">PIZZERIA & BREWERY</h2>
               </div>
           </div>
         </div>
@@ -89,13 +80,13 @@
       <section class="py-5 my-5">
         <div class="container">
           <div class="row gy-5 g-lg-5 justify-content-center">
-             
-              <div class="col-lg-5" data-aos="fade">
-                 
+            
+            <div class="col-lg-5" data-aos="fade">
+              
                  
                   <p class="mb-4">Detroit-style pizza. Small-batch beer.</p>
                   <p class="mb-4">
-                    Paradox offers delicious hand-made pizza and appetizers paired with craft beer brewed on site — plus a rotating lineup of Saskatchewan-made brews and spirits. Every bite, every pour, rooted in local flavor.
+                    Paradox offers delicious hand-made pizza and appetizers paired with craft beer brewed on site (coming soon...) — plus a rotating lineup of Saskatchewan-made brews and spirits. Every bite, every pour, rooted in local flavor.
                   </p>
                  
                 
@@ -106,7 +97,7 @@
 
       <section id="contact">
         <div class="container">
-          <div class="row gy-5 g-lg-5 justify-content-center" data-aos="fade-down">
+          <div class="row gy-5 g-lg-5 justify-content-center" data-aos="fade">
             <div class="col-lg-3" >
               <p  class="my-0">806 Broadway Ave</p>
               <p>Saskatoon SK, S7H 3P6 </p>
@@ -115,19 +106,58 @@
                 <p class="my-0" >Tuesday: .......................... 11AM - 9PM</p>
                 <p class="my-0" >Wednesday: ..................... 11AM - 9PM</p>
                 <p class="my-0">Thursday: ......................... 11AM - 9PM</p>
-                <p class="my-0">Friday: ............................... 11AM - 9PM</p>
+                <p class="my-0">Friday: ............................... 11AM - 10PM</p>
                 <p class="my-0">Saturday: ........................... 11AM - 10PM</p>
                 <p class="my-0">Sunday: ............................. Closed</p>
                 <p class="my-0">Monday: ............................. Closed</p>
               </div>
-              <h3 class="my-0">Phone</h3>
-              <p>(617)-276-8031</p>
             </div>
           </div>
         </div>
 
       </section>
+      <section class="py-5 my-5" id="about">
+        <!-- Bootstrap Carousel -->
+        
+        <div id="homeCarousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"></button>
+          </div>
 
+          <!-- Slides -->
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+                <img src="assets/images/pizza_hall.jpg" class="d-block banner-img" >
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/italian_sandwich.jpg" class="d-block banner-img" >
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/caesar.jpg" class="d-block banner-img" >
+            </div>
+            <div class="carousel-item">
+                 <img src="assets/images/flights.jpg" class="d-block banner-img" >
+            </div>
+            
+          </div>
+          
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     
 
     
@@ -141,17 +171,17 @@
           <div class="footer-content col-lg-6  px-4">
             <div class="row justify-content-center">
            
-              <div data-aos="fade-down" class="col-lg-1 pt-4 pt-lg-0  align-items-center ">
-                <div class="social-icons d-flex align-items-center">
+              <div data-aos="fade" class="col-lg-2 pt-4 pt-lg-0  align-items-center ">
+                <div class="social-icons d-flex">
                   
-                    <a class="text-decoration-none text-white" href="#"><i class="fab fa-facebook"></i></a>
-                    <a class="text-decoration-none text-white" href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="text-decoration-none text-white" href="https://www.facebook.com/profile.php?id=61567020677072"><i class="fab fa-facebook"></i></a>
+                    <a class="text-decoration-none text-white" href="https://www.instagram.com/paradoxpizza.beer/"><i class="fab fa-instagram"></i></a>
                   
                 </div>
               </div>
             </div>
          
-            <div class="row" data-aos="fade-right">
+            <div class="row" data-aos="fade">
               <div class="d-flex flex-column flex-lg-row px-0 justify-content-between">
                 <div class="location d-flex align-items-center pe-2 py-3">
                   <i class="fa-solid fa-location-dot text-white fa-2x border-bottom pb-2"></i>
@@ -165,7 +195,7 @@
                   <i class="fa-solid fa-mobile text-white fa-2x border-bottom pb-2"></i>
                   <div class="ps-3">
                     <p class="mb-0">
-                      (617)-276-8031
+                      (306)-979-2929
                     </p>
                   </div>
                 </div>
@@ -215,21 +245,21 @@
 
       const firebaseConfig = {
 
-      apiKey: "AIzaSyD35zF6KwWbN-fmFhcpY9yibaBRaO0rGpA",
+          apiKey: "AIzaSyD35zF6KwWbN-fmFhcpY9yibaBRaO0rGpA",
+          
+          authDomain: "paradox-website-2b9d8.firebaseapp.com",
 
-      authDomain: "paradox-website-2b9d8.firebaseapp.com",
+          projectId: "paradox-website-2b9d8",
 
-      projectId: "paradox-website-2b9d8",
+          storageBucket: "paradox-website-2b9d8.firebasestorage.app",
 
-      storageBucket: "paradox-website-2b9d8.firebasestorage.app",
+          messagingSenderId: "365779761550",
 
-      messagingSenderId: "365779761550",
+          appId: "1:365779761550:web:d15f1d8a9bf2ec55e10cdf",
 
-      appId: "1:365779761550:web:d15f1d8a9bf2ec55e10cdf",
+          measurementId: "G-BDT8K92PC3"
 
-      measurementId: "G-BDT8K92PC3"
-
-  };
+      };
 
 
       // Initialize Firebase
