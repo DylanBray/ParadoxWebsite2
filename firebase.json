@@ -6,5 +6,11 @@
       "**/.*",
       "**/node_modules/**"
     ]
+      "rewrites": [
+          {
+              "source":"/menu.pdf",
+              "destination": "/assets/images/menu.pdf"
+          }
+    ]
   }
 }
