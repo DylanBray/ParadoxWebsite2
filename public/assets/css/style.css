@@ -822,7 +822,7 @@ footer {
   padding-top: 100px;
   padding-bottom: 40px;
   background-color: #040609;
-  background-image: url("./../images/footer-bg.jpg");
+  background-image: url("./../images/dark_hex.png");
 }
 
 footer .social-icons a {
