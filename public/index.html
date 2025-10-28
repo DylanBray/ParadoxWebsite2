@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Paradox Pizzeria & Beer is a Saskatoon restaurant and brewery serving handcrafted pizza and small-batch beer. Visit us on Broadway for great food, local craft beer, and a relaxed vibe.">
+    <meta name="keywords" content="Paradox Pizzeria, Saskatoon pizza, craft beer Saskatoon, Broadway restaurant, brewery Saskatoon, local pizza, Paradox Pizza Beer, Detroit Style Pizza">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow">
     <title>Paradox Pizzeria & Brewery</title>
     <link
       rel="stylesheet"
@@ -39,7 +42,7 @@
         <div class="menus">
           <ul class="d-flex mb-0">
             <li class="list-unstyled py-2">
-              <a class="text-decoration-none text-uppercase p-4" href="/menu.pdf"
+              <a class="text-decoration-none text-uppercase p-4" href="/Paradox-Menu.pdf" target="_blank" rel="noopener"
                 >MENU</a
               >
             </li>
@@ -268,6 +271,50 @@
 
       const analytics = getAnalytics(app);
 
+    </script>
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Brewpub",
+          "name": "Paradox Pizzeria & Brewery",
+          "image": "https://paradoxpizzabeer.com/assets/images/outside_sign_day.jpg",
+          "@id": "https://www.paradoxpizzabeer.com/",
+          "url": "https://www.paradoxpizzabeer.com/",
+          "telephone": "+1-306-979-2929",
+          "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Broadway Avenue",
+              "addressLocality": "Saskatoon",
+              "addressRegion": "SK",
+              "postalCode": "S7N1B6",
+              "addressCountry": "CA"
+          },
+          "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 52.117,
+              "longitude": -106.657
+          },
+          "servesCuisine": ["Pizza", "Craft Beer"],
+          "priceRange": "$$",
+          "hasMenu": "https://www.paradoxpizzabeer.com/files/Paradox-Menu.pdf",
+          "openingHoursSpecification": [
+              {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"],
+                  "opens": "11:30",
+                  "closes": "21:00"
+              },
+              {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Friday", "Saturday"],
+                  "opens": "11:30",
+                  "closes": "22:00"
+              }
+          ],
+          "sameAs": [
+              "https://www.instagram.com/paradoxpizza.beer"
+          ]
+      }
     </script>
   </body>
 </html>
