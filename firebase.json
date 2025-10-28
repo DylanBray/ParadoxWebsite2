@@ -8,8 +8,8 @@
     ],
       "rewrites": [
           {
-              "source":"/menu.pdf",
-              "destination": "/assets/images/menu.pdf"
+              "source":"/Paradox-Menu.pdf",
+              "destination": "/assets/images/Paradox-Menu.pdf"
           }
     ]
   }
