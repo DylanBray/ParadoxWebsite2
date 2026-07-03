@@ -245,13 +245,15 @@ h1,h3 {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    font-size: 1.5rem;
 }
 
 h4,
 h6 {
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
-  color: var(--heading-color);
+  font-family: "Azeret Mono", monospace;
+  font-weight: 400;
+  color: var(--primary-color);
+  font-size: 1.25rem;
 }
 
 h2 {
@@ -265,14 +267,15 @@ h2 {
 h5 {
   position: relative;
   display: inline;
-  font-family: "Pacifico", cursive;
+  font-family:  "Azeret Mono", monospace;
   color: var(--primary-color);
+  font-size: .9rem;
 }
 
 p,
 a,
 span {
-  font-family: "Heebo", sans-serif;
+  font-family: "Azeret Mono", monospace;
   font-weight: 400;
   font-style: normal;
 
@@ -999,10 +1002,10 @@ footer p {
 }
 
 .banner-img {
-    width: 60%;        /* full width */
+    width: 320px;        /* full width */
     margin: 0 auto;   /* centers the image */
     display: block; 
-    height: 270px;      /* adjust banner height */
+    height: 400px;      /* adjust banner height */
     object-fit: cover;  /* crop image instead of stretching */
 }
 
@@ -1021,4 +1024,14 @@ footer p {
   left: 50%;       /* horizontally center */
   transform: translate(-50%); /* adjust to true center */
   white-space: nowrap;
+}
+
+.carousel-control-prev {
+  width: 70%;
+  left: 40px;
+}
+
+.carousel-control-next {
+  width: 70%;
+  right: 40px;
 }
