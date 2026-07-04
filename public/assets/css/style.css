@@ -1009,23 +1009,6 @@ footer p {
     object-fit: cover;  /* crop image instead of stretching */
 }
 
-/* Hide real text on hover */
-.order-btn:hover {
-  color: transparent;       /* hide text */
-}
-
-/* Show alternate text */
-.order-btn:hover::after {
-  content: "Coming Soon!";   /* new text */
-  position: absolute;
-
-  /*top: 0;*/
-  color: white;           /* keeps same color as normal */
-  left: 50%;       /* horizontally center */
-  transform: translate(-50%); /* adjust to true center */
-  white-space: nowrap;
-}
-
 .carousel-control-prev {
   width: 70%;
   left: 40px;
@@ -1034,4 +1017,66 @@ footer p {
 .carousel-control-next {
   width: 70%;
   right: 40px;
+}
+
+.navbar {
+    background-color: #111 !important;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: white !important;
+    letter-spacing: 1px;
+    padding: 0.75rem 1rem !important;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color:  var(--primary-color) !important; /* gold */
+}
+
+.order-btn {
+    background: var(--primary-color);
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Hide real text on hover */
+.order-btn:hover {
+  color: black !important;       /* hide text */
+}
+@media (max-width: 991.98px) {
+
+    .navbar .container {
+        position: relative;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 12px;
+
+        flex-basis: auto;
+        flex-grow: 0;
+        width: max-content;
+
+        background: #111;
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+        box-shadow: 0 8px 24px rgba(0,0,0,.35);
+    }
+
+    .navbar-nav {
+        width: max-content;
+    }
+
+    .nav-link {
+        white-space: nowrap;
+        padding: .5rem .5rem !important;
+    }
 }
